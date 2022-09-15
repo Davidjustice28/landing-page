@@ -57,6 +57,8 @@ nav img {
     box-shadow: 0px 3px 4px silver;
 }
 #image-div img {
+    position: relative;
+    bottom: 10%;
     width: 100vw;
     height:auto;
     transform: scale(.1);
@@ -65,7 +67,7 @@ nav img {
 
 h3 {
     position:absolute;
-    top: 75vh;
+    top: 70vh;
     left: 45vw;
     opacity: 0;
     transition: 2s;
@@ -126,9 +128,12 @@ h3 {
 #statement {
     padding-top:50px;
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     opacity: 0;
     transition: 3s;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #info1, #info2, #info3 {
@@ -150,7 +155,7 @@ h3 {
     margin-right: auto;
 }
 
-#newsletter button {
+#newsletter a {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -162,4 +167,12 @@ h3 {
     padding: 10px;
     border-radius: 18px;
     text-decoration: none;
+}
+
+#button2:hover {
+    transform: scale(1.2);
+}
+
+#waitlist-button:hover {
+    transform: scale(1.1);
 }
