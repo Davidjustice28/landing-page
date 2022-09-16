@@ -40,6 +40,7 @@ nav img {
     text-decoration: none;
 }
 
+
 #a {
     align-self: center;
     margin-left: auto;
@@ -68,7 +69,7 @@ nav img {
 h3 {
     position:absolute;
     top: 70vh;
-    left: 45vw;
+    text-align: center;
     opacity: 0;
     transition: 2s;
 }
@@ -89,10 +90,8 @@ h3 {
     width:50%;
     height:100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    
+    justify-content: center;
 
 }
 
@@ -108,6 +107,10 @@ h3 {
 .message p {
     width:90%;
     text-align: center;
+}
+
+#backup-message {
+    display: none;
 }
 
 #screenshot-div {
@@ -153,6 +156,8 @@ h3 {
     margin-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
+    border: 1px solid #38838c;
 }
 
 #newsletter a {
@@ -185,4 +190,84 @@ footer {
     background-color: gray;
     color: white;
     border: 1px solid gray;
+}
+
+@media(max-width: 500px) {
+    #image-div {
+        height: 60vh;
+    }
+
+    #info1, #info2, #info3 {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+   
+    #main-section p {
+        font-size: smaller;
+    
+    }
+
+    #info3 {
+        margin-top: -50vh;
+    }
+
+    h3 {
+        font-size: small;
+        width: 70%;
+        top: 60vh;
+    }
+    #waitlist-button {
+        width:25%;
+        position: absolute;
+        top: 12%;
+        display: none;
+    }
+
+    .message-div, #screenshot-div {
+        width: 100vw;
+    }
+
+    #screenshot-div img {
+        width: 100%;
+    }
+
+    
+    #newsletter {
+        position: relative;
+        top:10vh;
+        width: 70%;
+        height: 20vh;
+        border: 2px solid #38838c;
+        border-radius: 5px;
+
+    }
+
+    #newsletter h1 {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    footer {
+        position: relative;
+        top: 5vh;
+    }
+
+    #original-message {
+        display: none;
+    }
+
+    #backup-message {
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 30px;
+    }
 }
