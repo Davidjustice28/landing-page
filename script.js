@@ -20,10 +20,10 @@ window.onscroll = function loadheader() {
 
 
 const div1 = document.getElementById("info1")
-div1.addEventListener("mouseover", () => zoom("example1",1 ))
+div1.addEventListener("mouseover", () => zoom("example1",1.5 ))
 div1.addEventListener("mouseout", () => zoom("example1", .7))
 const div2 = document.getElementById("info2")
-div2.addEventListener("mouseover", () => zoom("example2", 1))
+div2.addEventListener("mouseover", () => zoom("example2", 1.5))
 div2.addEventListener("mouseout", () => zoom("example2", .7))
 const div3 = document.getElementById("info3")
 div3.addEventListener("mouseover", () => zoom("example3",1 ))

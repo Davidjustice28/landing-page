@@ -169,10 +169,20 @@ h3 {
     text-decoration: none;
 }
 
-#button2:hover {
+#button2:hover, #button2:active {
     transform: scale(1.2);
 }
 
-#waitlist-button:hover {
-    transform: scale(1.1);
+
+#waitlist-button:active {
+    transform: scale(1.2);
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    font-size: smaller;
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
 }
