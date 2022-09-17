@@ -1,5 +1,6 @@
 function zoom(id,scale) {
     document.getElementById(id).style.transform = `scale(${scale})`
+    
 }
 setTimeout(() => {
     zoom("main-logo", 1)
@@ -18,6 +19,10 @@ window.onscroll = function loadheader() {
     }
 }
 
+if(document.getElementById("screenshot-div").style.width = "100vw") {
+    return
+}else {
+
 
 const div1 = document.getElementById("info1")
 div1.addEventListener("mouseover", () => zoom("example1",1.5 ))
@@ -31,3 +36,4 @@ div3.addEventListener("mouseout", () => zoom("example3", .7))
 const div4 = document.getElementById("info4")
 div4.addEventListener("mouseover", () => zoom("example4",1 ))
 div4.addEventListener("mouseout", () => zoom("example4", .7))
+}
